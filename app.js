@@ -8,7 +8,7 @@ morganBody(app, { noColors: process.env.NODE_ENV === 'production' });
 
 app
   .post("/square", (req, res) => {
-    const output = parseInt(req.body.input) ** 2;
+    const output = parseInt(req.body.input) ** 3;
     res.json(output);
   })
   .get('/', (req, res) => {
