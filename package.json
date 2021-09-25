@@ -6,10 +6,13 @@
     "node": "12.x"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "concurrently --kill-others \"nodemon -r esm app.js\""
   },
   "dependencies": {
+    "concurrently": "^6.2.1",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
-    "morgan-body": "^2.5.1"
+    "morgan-body": "^2.5.1",
+    "nodemon": "^2.0.13"
   }
 }
